@@ -1,0 +1,21 @@
+<h1>Listing Contacts</h1>
+
+<%= link_to "All Contacts", contact_path %>
+<%= link_to "New Contact", new_contact_path %>
+ 
+<table>
+  <tr>
+    <th>id</th>
+    <th>Name</th>
+    <th>Phone</th>
+  </tr>
+ 
+  <tr>
+    <td><%= @contact.id %></td>
+    <td><%= @contact.name %></td>
+    <td><%= @contact.phone %></td>
+  </tr>
+</table>
+ 
+<br>
+ 

@@ -1,0 +1,12 @@
+<h1>New Contact</h1>
+<!-- form accept-charset="UTF-8" action="/contacts" method="post">
+  <input type="text" name="contact[name]" value="Maneesh" />
+  <input type="text" name="contact[phone]" value="949-683-1434" />
+</form -->
+
+
+<%= form_for @contact do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :phone %>
+  <input type="submit" value="submit" /> 
+<% end %>
